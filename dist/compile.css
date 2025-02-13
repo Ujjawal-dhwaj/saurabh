@@ -1171,6 +1171,11 @@ html {
   background-repeat: no-repeat;
 }
 
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1639,6 +1644,14 @@ html {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:block {
+    display: block;
+  }
+
+  .max-lg\:hidden {
+    display: none;
+  }
+
   .max-lg\:text-\[25px\] {
     font-size: 25px;
   }
