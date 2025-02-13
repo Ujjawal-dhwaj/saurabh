@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -8,30 +8,27 @@
         content="Here I gonna create a landing page which is only based on html and tailcss framework... let get start !">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Winmatch</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link rel="icon" href="../public/assets/images/logo.svg" type="image/svg+xml">
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="preload" href="./custom.css">
+    <link rel="preconnect" href="./custom.css">
     <link href="../dist/compile.css" rel="stylesheet">
 </head>
 
 <body class="bg-[#2B2F35]">
     <main>
-
         <header class="bg-[#212429]">
             <div class="hidden lg:block">
                 <div class="flex justify-between">
                     <div class="flex items-end">
                         <div><img src="../public/assets/images/logo.svg" alt="Brand Logo" loading="lazy"
-                                fetchpriority="high" as="image" type="image/svg"></div>
+                                fetchpriority="high"></div>
                         <div class="flex gap-4 flex-col">
                             <div class="flex justify-between">
                                 <div class="flex gap-2 h-8 bg-sectionGray rounded-2xl px-4 ml-[14px] w-full">
                                     <img src="../public/assets/images/search_icon.svg" alt="search_icon" loading="lazy"
-                                        fetchpriority="high" as="image" type="image/svg" class="w-[17px]">
+                                        fetchpriority="high" class="w-[17px]">
                                     <input type="text" placeholder="Search Team Names"
                                         class="flex items-center gap-2 bg-sectionGray outline-none placeholder-white text-[12px] text-white w-full">
                                 </div>
@@ -70,13 +67,13 @@
             <div class="block lg:hidden">
                 <div class="flex justify-between">
                     <div class="w-[8rem] p-[12px] flex items-center cursor-pointer">
-                        <img src="../public/assets/images/mobWinmatchLogo.svg" alt="mobWinmatchLogo" loading="lazy"
-                            fetchpriority="high" as="image" type="image/svg" class="w-full">
+                        <img src="../public/assets/images/mobWinmatchLogo.svg" alt="mobWinmatchLogo" loading="eager"
+                            fetchpriority="high" class="w-full">
                     </div>
                     <div class="flex px-[12px] py-[9px] items-center">
                         <div class="w-4 cursor-pointer">
-                            <img src="../public/assets/images/search_icon.svg" alt="hero_banner" loading="lazy"
-                                fetchpriority="high" as="image" type="image/svg" class="w-full">
+                            <img src="../public/assets/images/search_icon.svg" alt="hero_banner" loading="eager"
+                                fetchpriority="high" class="w-full">
                         </div>
                         <div class="flex gap-[15px] p-4 h-max">
                             <button
@@ -86,7 +83,7 @@
                         </div>
                         <div class="w-4 cursor-pointer">
                             <img src="../public/assets/images/hamburger.svg" alt="hero_banner" loading="lazy"
-                                fetchpriority="high" as="image" type="image/svg" class="w-full">
+                                fetchpriority="high" class="w-full">
                         </div>
 
                     </div>
@@ -94,16 +91,15 @@
             </div>
         </header>
 
-        <section class="bock max-lg:hidden">
-            <img src="../public/assets/images/hero_banner.webp" alt="Hero Banner" loading="lazy" width="1920"
-                height="1080" class="w-full bg-no-repeat object-cover">
-        </section>
+        <div class="bock max-lg:hidden">
+            <img src="../public/assets/images/hero_banner.webp" alt="Hero Banner" loading="lazy" width="720"
+                height="1280" class="w-full bg-no-repeat object-cover">
+        </div>
 
-        <section class="hidden max-lg:block">
+        <div class="hidden max-lg:block">
             <img src="../public/assets/images/mobile_bg.png" alt="Background for Mobile" loading="lazy" width="720"
                 height="1280" class="w-full bg-no-repeat object-cover">
-        </section>
-
+        </div>
 
         <section class="red_gradiant w-full">
             <div class="relative h-max">
@@ -130,13 +126,13 @@
                         <a href="" class="flex gap-[13px] text-white pt-[36px] cursor-pointer">
                             <span class="font-bold text-[17px]">Register Now</span>
                             <img class="w-6 h-6" src="../public/assets/images/arrow_right.svg" alt="arrow_right"
-                                loading="lazy" fetchpriority="high" as="image" type="image/svg">
+                                loading="lazy" fetchpriority="high">
                         </a>
                     </div>
                     <div
                         class="xl:absolute xl:bottom-0 xl:right-0 min-xl:relative min-xl:bottom-auto min-xl:right-auto max-xl:flex max-xl:justify-center max-xl:items-center">
                         <img src="../public/assets/images/welcome_winmatch.webp" alt="welcome_winmatch" loading="lazy"
-                            fetchpriority="high" as="image" type="image/png" class="">
+                            fetchpriority="high" class="">
                     </div>
                 </div>
             </div>
@@ -144,7 +140,7 @@
 
         <section class="max-w-screen-xl mx-auto flex flex-col justify-center items-center">
             <div class="max-2xl:px-[20px] py-[100px] max-xl:py-[50px]">
-                <h1 class="font-medium text-[36px] text-white">Why Choose WinMatch?</h1>
+                <h2 class="font-medium text-[36px] text-white">Why Choose WinMatch?</h2>
                 <p class="text-4 pt-6 text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -166,16 +162,15 @@
 
         <section class="bg-[url('../public/assets/images/rupee_bg.webp')] bg-no-repeat bg-center bg-50">
             <div class="max-w-screen-xl mx-auto flex flex-col justify-center items-center">
-
                 <div class="max-2xl:px-[20px] pb-[100px] max-md:pb-[50px]">
                     <div
                         class="flex items-center justify-between grandient_border_left xl:grandient_border_right p-5 flex-col xl:flex-row">
                         <div
                             class="relative w-72 h-72 mr-5  max-sm:w-[15rem] max-basemobile:w-[13rem] max-mob:self-start">
                             <img src="../public/assets/images/winmatch_history_cover.webp" alt="winmatch_history_cover"
-                                loading="lazy" fetchpriority="high" as="image" type="image/png" class="w-full h-auto">
+                                loading="lazy" fetchpriority="high" class="w-full h-auto">
                             <img src="../public/assets/images/winmatch_history_img.webp" alt="winmatch_history_img"
-                                loading="lazy" fetchpriority="high" as="image" type="image/png"
+                                loading="lazy" fetchpriority="high"
                                 class="absolute top-9 right-[-100px] w-[13.5rem] max-sm:w-[10.5rem] max-sm:right-[-80px] max-basemobile:top-[1.3rem] h-auto">
                         </div>
                         <div class="flex-1 ml-32 max-xl:ml-0">
@@ -217,9 +212,9 @@
                         <div
                             class="relative w-72 h-72 mr-5 max-sm:w-[15rem] max-basemobile:mr-0 max-mob:self-end max-basemobile:w-[13rem]">
                             <img src="../public/assets/images/winmatch_history_cover.webp" alt="winmatch_history_cover"
-                                loading="lazy" fetchpriority="high" as="image" type="image/png" class="w-full h-auto">
+                                loading="lazy" fetchpriority="high" class="w-full h-auto">
                             <img src="../public/assets/images/registration_process.webp" alt="registration_process"
-                                loading="lazy" fetchpriority="high" as="image" type="image/png"
+                                loading="lazy" fetchpriority="high"
                                 class="absolute top-9 left-[-100px] w-[13.5rem] max-sm:w-[10.5rem] max-sm:left-[-80px] h-auto max-basemobile:top-[1.3rem]">
                         </div>
                         <div class=" flex-1 mr-32 max-xl:mr-0">
@@ -261,9 +256,9 @@
                         <div
                             class="relative w-72 h-72 mr-5 max-sm:w-[15rem] max-mob:self-start max-basemobile:w-[13rem] max-basemobile:h-[15rem]">
                             <img src="../public/assets/images/winmatch_history_cover.webp" alt="winmatch_history_cover"
-                                loading="lazy" fetchpriority="high" as="image" type="image/png" class="w-full h-auto">
+                                loading="lazy" fetchpriority="high" class="w-full h-auto">
                             <img src="../public/assets/images/benefits_games.webp" alt="benefits_games" loading="lazy"
-                                fetchpriority="high" as="image" type="image/png"
+                                fetchpriority="high"
                                 class="absolute top-9 right-[-100px] w-[13.5rem] max-sm:w-[10.5rem] max-sm:right-[-80px] h-auto max-basemobile:top-[1.3rem]">
                         </div>
                         <div class="flex-1 ml-32 max-xl:ml-0">
@@ -306,9 +301,9 @@
                         <div
                             class="relative w-72 h-72 mr-5 max-basemobile:mr-0 max-sm:w-[15rem] max-mob:self-end max-basemobile:w-[13rem]">
                             <img src="../public/assets/images/winmatch_history_cover.webp" alt="winmatch_history_cover"
-                                loading="lazy" fetchpriority="high" as="image" type="image/png" class="w-full h-auto">
+                                loading="lazy" fetchpriority="high" class="w-full h-auto">
                             <img src="../public/assets/images/deposite_withdraw.webp" alt="registration_process"
-                                loading="lazy" fetchpriority="high" as="image" type="image/png"
+                                loading="lazy" fetchpriority="high"
                                 class="absolute top-9 left-[-100px] w-[13.5rem] max-sm:w-[10.5rem] max-sm:left-[-80px] h-auto max-basemobile:top-[1.3rem]">
                         </div>
                         <div class=" flex-1 mr-32 max-xl:mr-0">
@@ -351,8 +346,8 @@
         <section class="max-w-screen-xl mx-auto flex flex-col justify-center items-center">
             <div class="max-2xl:px-[20px] max-md:pt-[50px]">
                 <div class="flex gap-[10px]">
-                    <img src="../public/assets/images/permotion.svg" alt="permotion" loading="lazy" fetchpriority="high"
-                        as="image" type="image/png">
+                    <img src="../public/assets/images/permotion.svg" alt="permotion" loading="lazy"
+                        fetchpriority="high">
                     <h1 class="font-medium text-[36px] text-white">All Promotions</h1>
                 </div>
                 <p class="text-4 pt-6 text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -373,12 +368,12 @@
             </div>
         </section>
 
-        <section class="max-w-screen-xl mx-auto flex flex-col justify-center items-center">
+        <div class="max-w-screen-xl mx-auto flex flex-col justify-center items-center">
             <div
                 class="grid grid-cols-3 grid-rows-2 max-xl:grid-cols-2 max-xl:grid-rows-3 max-sm:grid-cols-1 max-sm:grid-rows-6 max-2xl:px-[20px] pb-[100px] max-md:pb-[50px] pt-[60px] gap-x-[37px] gap-y-[20px]">
                 <div class="card_scale">
-                    <div><img src="../public/assets/images/permossion/spinWin.webp" alt="spinWin" srcset=""
-                            loading="lazy" fetchpriority="high" as="image" type="image/png" class="w-fullOccupied">
+                    <div><img src="../public/assets/images/permossion/spinWin.webp" alt="spinWin" loading="lazy"
+                            fetchpriority="high" class="w-fullOccupied">
                     </div>
                     <div class="h-[30px] bg-white flex justify-center items-center">
                         <p class="font-bold text-[17px] text-[#43444A]">Spin And Win</p>
@@ -386,24 +381,22 @@
                 </div>
                 <div class="card_scale">
                     <div><img src="../public/assets/images/permossion/liveCasinoReload.webp" alt="liveCasinoReload"
-                            srcset="" loading="lazy" fetchpriority="high" as="image" type="image/png"
-                            class="w-fullOccupied"></div>
+                            loading="lazy" fetchpriority="high" class="w-fullOccupied"></div>
                     <div class="h-[30px] bg-white flex justify-center items-center">
                         <p class="font-bold text-[17px] text-[#43444A]">10% Live Casino Reload Bonus</p>
                     </div>
                 </div>
                 <div class="card_scale">
                     <div><img src="../public/assets/images/permossion/unlimitedReferalBonus.webp"
-                            alt="unlimitedReferalBonus" srcset="" loading="lazy" fetchpriority="high" as="image"
-                            type="image/png" class="w-fullOccupied" class="w-fullOccupied"></div>
+                            alt="unlimitedReferalBonus" loading="lazy" fetchpriority="high" class="w-fullOccupied">
+                    </div>
                     <div class="h-[30px] bg-white flex justify-center items-center">
                         <p class="font-bold text-[17px] text-[#43444A]">Unlimited Referral Bonus</p>
                     </div>
                 </div>
                 <div class="card_scale">
-                    <div><img src="../public/assets/images/permossion/vipLuckyDraw.webp" alt="vipLuckyDraw" srcset=""
-                            loading="lazy" fetchpriority="high" as="image" type="image/webp" class="w-fullOccupied"
-                            class="w-fullOccupied">
+                    <div><img src="../public/assets/images/permossion/vipLuckyDraw.webp" alt="vipLuckyDraw"
+                            loading="lazy" fetchpriority="high" class="w-fullOccupied">
                     </div>
                     <div class="h-[30px] bg-white flex justify-center items-center">
                         <p class="font-bold text-[17px] text-[#43444A]">VIP Lucky Draw</p>
@@ -411,22 +404,22 @@
                 </div>
                 <div class="card_scale">
                     <div><img src="../public/assets/images/permossion/dailySlotRebate.webp" alt="dailySlotRebate"
-                            srcset="" loading="lazy" fetchpriority="high" as="image" type="image/webp"
-                            class="w-fullOccupied"></div>
+                            loading="lazy" fetchpriority="high" class="w-fullOccupied">
+                    </div>
                     <div class="h-[30px] bg-white flex justify-center items-center">
                         <p class="font-bold text-[17px] text-[#43444A]">1.2% Daily Slot Rebate</p>
                     </div>
                 </div>
                 <div class="card_scale">
-                    <div><img src="../public/assets/images/permossion/loyalityPoint.webp" alt="loyalityPoint" srcset=""
-                            loading="lazy" fetchpriority="high" as="image" type="image/webp" class="w-fullOccupied">
+                    <div><img src="../public/assets/images/permossion/loyalityPoint.webp" alt="loyalityPoint"
+                            loading="lazy" fetchpriority="high" class="w-fullOccupied">
                     </div>
                     <div class="h-[30px] bg-white flex justify-center items-center">
                         <p class="font-bold text-[17px] text-[#43444A]">Slots 2x Loyalty Points</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section
             class="bg-[url('../public/assets/images/tournament/tournamentBg.webp')] bg-no-repeat bg-bottom bg-cover">
@@ -461,19 +454,18 @@
                     class="flex gap-[90px] absolute bottom-0 -translate-y-[90px] flex-col xl:flex-row max-xl:w-[70%] max-xl:gap-[20px] max-xl:-translate-y-[30px] max-xl:items-center">
                     <div class="flex gap-[35px]">
                         <div class="card_scale"><img src="../public/assets/images/tournament/silverBatch.webp"
-                                alt="silverBatch" loading="lazy" fetchpriority="high" as="image" type="image/webp">
+                                alt="silverBatch" loading="lazy" fetchpriority="high">
                         </div>
                         <div class="card_scale"><img src="../public/assets/images/tournament/goldBatch.webp"
-                                alt="goldBatch" loading="lazy" fetchpriority="high" as="image" type="image/webp">
+                                alt="goldBatch" loading="lazy" fetchpriority="high">
                         </div>
                         <div class="card_scale"><img src="../public/assets/images/tournament/bronzeBatch.webp"
-                                alt="bronzeBatch" loading="lazy" fetchpriority="high" as="image" type="image/webp">
+                                alt="bronzeBatch" loading="lazy" fetchpriority="high">
                         </div>
                     </div>
                     <div>
                         <div><img src="../public/assets/images/tournament/tournament_ranking.webp"
-                                alt="tournament_ranking" loading="lazy" fetchpriority="high" as="image"
-                                type="image/webp"></div>
+                                alt="tournament_ranking" loading="lazy" fetchpriority="high"></div>
                     </div>
                 </div>
             </div>
@@ -484,10 +476,10 @@
                 <div class="">
                     <img class="absolute w-[25%] right-0 top-0 transform translate-x-[0px] translate-y-[-15%] -z-[1]"
                         src="../public/assets/images/featuresBgOne.svg" alt="featuresBgOne" loading="lazy"
-                        fetchpriority="high" as="image" type="image/png">
+                        fetchpriority="high">
                     <img class="absolute left-0 bottom-0 transform translate-x-[-15%] translate-y-[38%] z-[-1] w-[25%] "
                         src="../public/assets/images/featuresBgTwo.svg" alt="featuresBgTwo" loading="lazy"
-                        fetchpriority="high" as="image" type="image/png">
+                        fetchpriority="high">
                     <div class="max-2xl:px-[20px] py-[100px] max-xl:py-[50px]">
                         <div>
                             <h1 class="font-medium text-[36px] text-white">Features</h1>
@@ -508,8 +500,7 @@
                             <div class="py-[30px] px-[40px] bg-[#25292E] card_scale">
                                 <div class="flex flex-col gap-[12px] items-center">
                                     <div><img src="../public/assets/images/features/multilingual.svg" alt="multilingual"
-                                            srcset="" class="w-[54px] h-[54px]" loading="lazy" fetchpriority="high"
-                                            as="image" type="image/webp">
+                                            class="w-[54px] h-[54px]" loading="lazy" fetchpriority="high">
                                     </div>
                                     <div class="flex flex-col gap-[12px] items-center">
                                         <p class="text-white text-[20px] font-medium">Multilingual</p>
@@ -524,8 +515,7 @@
                             <div class="py-[30px] px-[40px] bg-[#25292E] card_scale">
                                 <div class="flex flex-col gap-[12px] items-center">
                                     <div><img src="../public/assets/images/features/vipProgram.svg" alt="vipProgram"
-                                            srcset="" class="w-[54px] h-[54px]" loading="lazy" fetchpriority="high"
-                                            as="image" type="image/webp">
+                                            class="w-[54px] h-[54px]" loading="lazy" fetchpriority="high">
                                     </div>
                                     <div class="flex flex-col gap-[12px] items-center">
                                         <p class="text-white text-[20px] font-medium">VIP Program</p>
@@ -542,7 +532,7 @@
                                 <div class="flex flex-col gap-[12px] items-center">
                                     <div><img src="../public/assets/images/features/loyalityPoint.svg"
                                             alt="loyalityPoint" class="w-[54px] h-[54px]" loading="lazy"
-                                            fetchpriority="high" as="image" type="image/webp">
+                                            fetchpriority="high">
                                     </div>
                                     <div class="flex flex-col gap-[12px] items-center">
                                         <p class="text-white text-[20px] font-medium">Loyalty points</p>
@@ -557,8 +547,7 @@
                             <div class="py-[30px] px-[40px] bg-[#25292E] card_scale">
                                 <div class="flex flex-col gap-[12px] items-center">
                                     <div><img src="../public/assets/images/features/affialiates.svg" alt="affialiates"
-                                            class="w-[54px] h-[54px]" loading="lazy" fetchpriority="high" as="image"
-                                            type="image/webp">
+                                            class="w-[54px] h-[54px]" loading="lazy" fetchpriority="high">
                                     </div>
                                     <div class="flex flex-col gap-[12px] items-center">
                                         <p class="text-white text-[20px] font-medium">Affiliates</p>
@@ -576,7 +565,7 @@
                                 <div class="flex flex-col gap-[12px] items-center">
                                     <div><img src="../public/assets/images/features/excellentSupport.svg"
                                             alt="excellentSupport" class="w-[54px] h-[54px]" loading="lazy"
-                                            fetchpriority="high" as="image" type="image/webp">
+                                            fetchpriority="high">
                                     </div>
                                     <div class="flex flex-col gap-[12px] items-center">
                                         <p class="text-white text-[20px] font-medium">Excellent Support</p>
@@ -593,8 +582,7 @@
                             <div class="py-[30px] px-[40px] bg-[#25292E] card_scale">
                                 <div class="flex flex-col gap-[12px] items-center">
                                     <div><img src="../public/assets/images/features/referEarn.svg" alt="referEarn"
-                                            class="w-[54px] h-[54px]" loading="lazy" fetchpriority="high" as="image"
-                                            type="image/webp"></div>
+                                            class="w-[54px] h-[54px]" loading="lazy" fetchpriority="high"></div>
                                     <div class="flex flex-col gap-[12px] items-center">
                                         <p class="text-white text-[20px] font-medium">Refer and Earn</p>
                                         <p class="text-white">Lorem ipsum dolor sit amet. Non veritatis itaque id quia
@@ -643,45 +631,58 @@
                 </div>
                 <div
                     class="absolute  transform -translate-x-[110%] translate-y-[20%] flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px] w-[calc((100%-120px)/7)] bottom-[170px]">
-                    <img class="card_scale" src="../public/assets/images/topGames/speedAutoRoulet.webp"
-                        alt="speedAutoRoulet" loading="lazy" fetchpriority="high" as="image" type="image/png">
+                    <div class="card_scale">
+                        <img src="../public/assets/images/topGames/speedAutoRoulet.webp" alt="speedAutoRoulet"
+                            loading="lazy" fetchpriority="high">
+                    </div>
                     <p class="text-white text-[14px] font-normal">Speed Auto Roulette</p>
                 </div>
                 <div
                     class="absolute transform -translate-x-[220%] translate-y-[40%] flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px] w-[calc((100%-120px)/7)] bottom-[170px]">
-                    <img class="card_scale" src="../public/assets/images/topGames/speedYellowRoulet.webp"
-                        alt="speedYellowRoulet" loading="lazy" fetchpriority="high" as="image" type="image/png">
+                    <div class="card_scale">
+                        <img src="../public/assets/images/topGames/speedYellowRoulet.webp" alt="speedYellowRoulet"
+                            loading="lazy" fetchpriority="high">
+                    </div>
                     <p class="text-white text-[14px] font-normal">Speed Roulette</p>
                 </div>
                 <div
                     class="absolute transform -translate-x-[330%] translate-y-[60%] flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px] w-[calc((100%-120px)/7)] bottom-[170px]">
-                    <img class="card_scale" src="../public/assets/images/topGames/rouletBlue.webp" alt="rouletBlue"
-                        loading="lazy" fetchpriority="high" as="image" type="image/png">
+                    <div class="card_scale">
+                        <img src="../public/assets/images/topGames/rouletBlue.webp" alt="rouletBlue" loading="lazy"
+                            fetchpriority="high">
+                    </div>
                     <p class="text-white text-[14px] font-normal">Roulette</p>
                 </div>
                 <div
                     class="absolute left-1/2 -translate-x-1/2 transform flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px] w-[calc((100%-120px)/7)] bottom-[170px]">
-                    <img class="card_scale" src="../public/assets/images/topGames/prestigeAutoRoulette.webp"
-                        alt="prestigeAutoRoulette" srcset="" loading="lazy" fetchpriority="high" as="image"
-                        type="image/png">
+                    <div class="card_scale">
+                        <img src="../public/assets/images/topGames/prestigeAutoRoulette.webp" alt="prestigeAutoRoulette"
+                            loading="lazy" fetchpriority="high">
+                    </div>
                     <p class="text-white text-[14px] font-normal">Prestige Auto Roulette</p>
                 </div>
                 <div
                     class="absolute transform translate-x-[220%] translate-y-[40%] flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px] w-[calc((100%-120px)/7)] bottom-[170px]">
-                    <img class="card_scale" src="../public/assets/images/topGames/roulete.webp" alt="roulete" srcset=""
-                        loading="lazy" fetchpriority="high" as="image" type="image/png">
+                    <div class="card_scale">
+                        <img src="../public/assets/images/topGames/roulete.webp" alt="roulete" loading="lazy"
+                            fetchpriority="high">
+                    </div>
                     <p class="text-white text-[14px] font-normal">Roulette</p>
                 </div>
                 <div
                     class="absolute transform translate-x-[110%] translate-y-[20%] flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px] w-[calc((100%-120px)/7)] bottom-[170px]">
-                    <img class="card_scale" src="../public/assets/images/topGames/casino_roulet.webp"
-                        alt="casino_roulet" srcset="" loading="lazy" fetchpriority="high" as="image" type="image/png">
+                    <div class="card_scale">
+                        <img src="../public/assets/images/topGames/casino_roulet.webp" alt="casino_roulet"
+                            loading="lazy" fetchpriority="high">
+                    </div>
                     <p class="text-white text-[14px] font-normal">Oracle Casino Roulette</p>
                 </div>
                 <div
                     class="absolute transform translate-x-[330%] translate-y-[60%] flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px] w-[calc((100%-120px)/7)] bottom-[170px]">
-                    <img class="card_scale" src="../public/assets/images/topGames/speedRoulet.webp" alt="speedRoulet"
-                        srcset="" loading="lazy" fetchpriority="high" as="image" type="image/png">
+                    <div class="card_scale">
+                        <img src="../public/assets/images/topGames/speedRoulet.webp" alt="speedRoulet" loading="lazy"
+                            fetchpriority="high">
+                    </div>
                     <p class="text-white text-[14px] font-normal">Speed Roulette</p>
                 </div>
             </div>
@@ -719,40 +720,40 @@
                 <div class="col-span-2">
                     <div class="flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px]">
                         <img src="../public/assets/images/topGames/speedAutoRoulet.webp" alt="speedAutoRoulet"
-                            loading="lazy" fetchpriority="high" as="image" type="image/png">
+                            loading="lazy" fetchpriority="high">
                         <p class="text-white text-[14px] font-normal">Speed Auto Roulette</p>
                     </div>
                 </div>
 
                 <div class="flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px]">
                     <img src="../public/assets/images/topGames/speedYellowRoulet.webp" alt="speedYellowRoulet"
-                        loading="lazy" fetchpriority="high" as="image" type="image/png">
+                        loading="lazy" fetchpriority="high">
                     <p class="text-white text-[14px] font-normal">Speed Roulette</p>
                 </div>
 
                 <div class="flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px]">
                     <img src="../public/assets/images/topGames/rouletBlue.webp" alt="rouletBlue" loading="lazy"
-                        fetchpriority="high" as="image" type="image/png">
+                        fetchpriority="high">
                     <p class="text-white text-[14px] font-normal">Roulette</p>
                 </div>
                 <div class="flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px]">
                     <img src="../public/assets/images/topGames/prestigeAutoRoulette.webp" alt="prestigeAutoRoulette"
-                        srcset="" loading="lazy" fetchpriority="high" as="image" type="image/png">
+                        loading="lazy" fetchpriority="high">
                     <p class="text-white text-[14px] font-normal">Prestige Auto Roulette</p>
                 </div>
                 <div class="flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px]">
-                    <img src="../public/assets/images/topGames/roulete.webp" alt="roulete" srcset="" loading="lazy"
-                        fetchpriority="high" as="image" type="image/png">
+                    <img src="../public/assets/images/topGames/roulete.webp" alt="roulete" loading="lazy"
+                        fetchpriority="high">
                     <p class="text-white text-[14px] font-normal">Roulette</p>
                 </div>
                 <div class="flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px]">
-                    <img src="../public/assets/images/topGames/casino_roulet.webp" alt="casino_roulet" srcset=""
-                        loading="lazy" fetchpriority="high" as="image" type="image/png">
+                    <img src="../public/assets/images/topGames/casino_roulet.webp" alt="casino_roulet" loading="lazy"
+                        fetchpriority="high">
                     <p class="text-white text-[14px] font-normal">Oracle Casino Roulette</p>
                 </div>
                 <div class="flex flex-col gap-2 items-center justify-center text-center rounded-[20px] h-[234px]">
-                    <img src="../public/assets/images/topGames/speedRoulet.webp" alt="speedRoulet" srcset=""
-                        loading="lazy" fetchpriority="high" as="image" type="image/png">
+                    <img src="../public/assets/images/topGames/speedRoulet.webp" alt="speedRoulet" loading="lazy"
+                        fetchpriority="high">
                     <p class="text-white text-[14px] font-normal">Speed Roulette</p>
                 </div>
             </div>
@@ -765,12 +766,12 @@
                     <div class="flex items-center justify-between  flex-row-reverse gap-[20px]">
                         <div class="flex-1">
                             <img src="../public/assets/images/sportsBook.webp" alt="sportsBook" loading="lazy"
-                                fetchpriority="high" as="image" type="image/png" class="w-full h-auto">
+                                fetchpriority="high" class="w-full h-auto">
                         </div>
                         <div class="flex-1">
                             <div class="flex items-center gap-[12px] pb-6">
                                 <img src="../public/assets/images/sportsBook.svg" alt="sportsBook" loading="lazy"
-                                    fetchpriority="high" as="image" type="image/png" class="w-max-[40px]">
+                                    fetchpriority="high" class="w-max-[40px]">
                                 <h1 class=" text-white font-medium text-[36px]">Sportsbook</h1>
                             </div>
                             <p class="text-4 text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -813,12 +814,12 @@
                         <div class="flex flex-col gap-8">
                             <div class="flex items-center gap-[12px] pb-6">
                                 <img src="../public/assets/images/sportsBook.svg" alt="sportsBook" loading="lazy"
-                                    fetchpriority="high" as="image" type="image/png" class="w-max-[40px]">
+                                    fetchpriority="high" class="w-max-[40px]">
                                 <h1 class=" text-white font-medium text-[36px]">Sportsbook</h1>
                             </div>
                             <div>
                                 <img src="../public/assets/images/sportsBook.webp" alt="sportsBook" loading="lazy"
-                                    fetchpriority="high" as="image" type="image/png" class="w-full h-auto">
+                                    fetchpriority="high" class="w-full h-auto">
                             </div>
                             <p class="text-4 text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing
                                 elit,
@@ -874,7 +875,7 @@
                     <div
                         class="xl:absolute xl:bottom-0 xl:left-0 min-xl:relative min-xl:bottom-auto min-xl:left-auto max-xl:flex max-xl:justify-center max-xl:items-center">
                         <img src="../public/assets/images/semlessWithdraw.webp" alt="semlessWithdraw" loading="lazy"
-                            fetchpriority="high" as="image" type="image/png" class="w-[90%] max-xl:w-[35%]">
+                            fetchpriority="high" class="w-[90%] max-xl:w-[35%]">
                     </div>
 
                     <div class="pl-[100px] max-xl:px-[20px] min-px-[100px] py-[25px] w-[68%] max-xl:w-full">
@@ -935,66 +936,115 @@
             </div>
         </section>
 
-        <section>
+        <div>
             <div class="flex flex-col px-8">
                 <div class="scroller" data-direction="right" data-speed="slow">
                     <div class="scroller__inner py-4 flex flex-wrap gap-6">
-                        <img class="card_scale" src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+
                     </div>
                 </div>
                 <div class="scroller" data-direction="left" data-speed="slow">
                     <div class="scroller__inner py-4 flex flex-wrap gap-6">
-                        <img class="card_scale" src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
-                        <img class="card_scale" src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg" />
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgOne.webp" alt="sliderImgOne" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgTwo.webp" alt="sliderImgTwo" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgThree.webp" alt="sliderImgThree" loading="lazy"
+                                fetchpriority="high">
+                        </div>
+                        <div class="card_scale">
+                            <img src="../public/assets/images/sliderImgFour.webp" alt="sliderImgFour" loading="lazy"
+                                fetchpriority="high">
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <section class="hidden Tab:block">
             <div class="max-w-screen-xl mx-auto flex flex-col justify-center items-center">
@@ -1037,8 +1087,7 @@
                         <div class="flex items-center justify-between  flex-row-reverse">
                             <div class="flex-1 pt-[83px]">
                                 <img src="../public/assets/images/howToBet/loginAcount.webp" alt="loginAcount"
-                                    loading="lazy" fetchpriority="high" as="image/webp" type="image/png"
-                                    class="w-full h-auto card_scale">
+                                    loading="lazy" fetchpriority="high" class="w-full h-auto card_scale">
                             </div>
                             <div class=" flex-1">
                                 <h1 class="mb-[12px] text-white font-bold text-[24px]">Log in to your account</h1>
@@ -1081,8 +1130,7 @@
                         <div class="flex items-center justify-between ">
                             <div class="flex-1">
                                 <img src="../public/assets/images/howToBet/depositeFund.webp" alt="depositeFund"
-                                    loading="lazy" fetchpriority="high" as="webp" type="image/png"
-                                    class="w-full h-auto card_scale">
+                                    loading="lazy" fetchpriority="high" class="w-full h-auto card_scale">
                             </div>
                             <div class=" flex-1">
                                 <h1 class="mb-[12px] text-white font-bold text-[24px]">Deposit Funds</h1>
@@ -1125,8 +1173,7 @@
                         <div class="flex flex-row-reverse items-center justify-between ">
                             <div class="flex-1">
                                 <img src="../public/assets/images/howToBet/chooseBet.webp" alt="chooseBet"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/webp"
-                                    class="w-full h-auto card_scale">
+                                    loading="lazy" fetchpriority="high" class="w-full h-auto card_scale">
                             </div>
                             <div class=" flex-1">
                                 <h1 class="mb-[12px] text-white font-bold text-[24px]">Choose your Bet & Select
@@ -1170,8 +1217,7 @@
                         <div class="flex items-center justify-between ">
                             <div class="flex-1">
                                 <img src="../public/assets/images/howToBet/betAmount.webp" alt="betAmount"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/webp"
-                                    class="w-full h-auto card_scale">
+                                    loading="lazy" fetchpriority="high" class="w-full h-auto card_scale">
                             </div>
                             <div class=" flex-1">
                                 <h1 class="mb-[12px] text-white font-bold text-[24px]">Enter Your Bet Amount
@@ -1215,8 +1261,7 @@
                         <div class="flex flex-row-reverse items-center justify-between ">
                             <div class="flex-1">
                                 <img src="../public/assets/images/howToBet/chooseBet.webp" alt="chooseBet"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/webp"
-                                    class="w-full h-auto card_scale">
+                                    loading="lazy" fetchpriority="high" class="w-full h-auto card_scale">
                             </div>
                             <div class=" flex-1">
                                 <h1 class="mb-[12px] text-white font-bold text-[24px]">Confirm you bet
@@ -1260,7 +1305,7 @@
                         <div class="flex items-center justify-between ">
                             <div class="flex-1">
                                 <img src="../public/assets/images/howToBet/result.webp" alt="result" loading="lazy"
-                                    fetchpriority="high" as="image" type="image/webp" class="w-full h-auto card_scale">
+                                    fetchpriority="high" class="w-full h-auto card_scale">
                             </div>
                             <div class=" flex-1">
                                 <h1 class="mb-[12px] text-white font-bold text-[24px]">Wait for Results
@@ -1349,8 +1394,7 @@
                                         Log in to
                                         your account</h1>
                                     <img src="../public/assets/images/howToBet/loginAcount.webp" alt="loginAcount"
-                                        loading="lazy" fetchpriority="high" as="image/webp" type="image/png"
-                                        class="w-full h-auto">
+                                        loading="lazy" fetchpriority="high" class="w-full h-auto">
                                 </div>
                                 <p class="text-[14px] text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit,
@@ -1392,8 +1436,7 @@
                                         class=" text-white font-medium max-sm:text-[18px] max-md:text-[20px] max-lg:text-[25px] max-xl:text-[30px]">
                                         Log in to your account</h1>
                                     <img src="../public/assets/images/howToBet/depositeFund.webp" alt="depositeFund"
-                                        loading="lazy" fetchpriority="high" as="image/webp" type="image/png"
-                                        class="w-full h-auto">
+                                        loading="lazy" fetchpriority="high" class="w-full h-auto">
                                 </div>
                                 <p class="text-[14px] text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit,
@@ -1435,8 +1478,7 @@
                                         class=" text-white font-medium max-sm:text-[18px] max-md:text-[20px] max-lg:text-[25px] max-xl:text-[30px]">
                                         Log in to your account</h1>
                                     <img src="../public/assets/images/howToBet/chooseBet.webp" alt="chooseBet"
-                                        loading="lazy" fetchpriority="high" as="image/webp" type="image/png"
-                                        class="w-full h-auto">
+                                        loading="lazy" fetchpriority="high" class="w-full h-auto">
                                 </div>
                                 <p class="text-[14px] text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit,
@@ -1478,8 +1520,7 @@
                                         class=" text-white font-medium max-sm:text-[18px] max-md:text-[20px] max-lg:text-[25px] max-xl:text-[30px]">
                                         Log in to your account</h1>
                                     <img src="../public/assets/images/howToBet/betAmount.webp" alt="betAmount"
-                                        loading="lazy" fetchpriority="high" as="image/webp" type="image/png"
-                                        class="w-full h-auto">
+                                        loading="lazy" fetchpriority="high" class="w-full h-auto">
                                 </div>
                                 <p class="text-[14px] text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit,
@@ -1521,8 +1562,7 @@
                                         class=" text-white font-medium max-sm:text-[18px] max-md:text-[20px] max-lg:text-[25px] max-xl:text-[30px]">
                                         Log in to your account</h1>
                                     <img src="../public/assets/images/howToBet/confirmBet.webp" alt="confirmBet"
-                                        loading="lazy" fetchpriority="high" as="image/webp" type="image/png"
-                                        class="w-full h-auto">
+                                        loading="lazy" fetchpriority="high" class="w-full h-auto">
                                 </div>
                                 <p class="text-[14px] text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit,
@@ -1564,7 +1604,7 @@
                                         class=" text-white font-medium max-sm:text-[18px] max-md:text-[20px] max-lg:text-[25px] max-xl:text-[30px]">
                                         Log in to your account</h1>
                                     <img src="../public/assets/images/howToBet/result.webp" alt="result" loading="lazy"
-                                        fetchpriority="high" as="image/webp" type="image/png" class="w-full h-auto">
+                                        fetchpriority="high" class="w-full h-auto">
                                 </div>
                                 <p class="text-[14px] text-white">"Lorem ipsum dolor sit amet, consectetur adipiscing
                                     elit,
@@ -1611,7 +1651,7 @@
                 <div class="pl-[40px] py-[25px] w-[50%] max-xl:w-[100%]">
                     <div class="flex gap-1 items-center">
                         <img class="w-[40px] h-[40px]" src="../public/assets/images/linkReferEarn.svg"
-                            alt="linkReferEarn" loading="lazy" fetchpriority="high" as="image" type="image/svg">
+                            alt="linkReferEarn" loading="lazy" fetchpriority="high">
                         <h2 class="font-medium text-[42px] text-white">Refer & Earn!</h2>
                     </div>
                     <p class="text-4 text-white pt-6">"Lorem ipsum dolor sit amet, consectetur
@@ -1633,13 +1673,13 @@
                     <a href="" class="flex gap-[13px] text-white pt-[36px] cursor-pointer">
                         <span class="font-bold text-[17px]">Register Now</span>
                         <img class="w-6 h-6" src="../public/assets/images/arrow_right.svg" alt="arrow_right"
-                            loading="lazy" fetchpriority="high" as="image" type="image/svg">
+                            loading="lazy" fetchpriority="high">
                     </a>
                 </div>
                 <div
                     class="xl:absolute xl:bottom-0 xl:right-0 min-xl:relative min-xl:bottom-auto min-xl:right-auto max-xl:flex max-xl:justify-end max-xl:items-center">
                     <img src="../public/assets/images/referEarnBanner.webp" alt="referEarnBanner" loading="lazy"
-                        fetchpriority="high" as="image" type="image/png" class="">
+                        fetchpriority="high" class="">
                 </div>
             </div>
         </section>
@@ -1653,7 +1693,7 @@
                             <div class="px-8 ">
                                 <div class="pb-4">
                                     <img src="../public/assets/images/fotter_logo.svg" alt="fotter_logo" loading="lazy"
-                                        fetchpriority="high" as="image" type="image/png">
+                                        fetchpriority="high">
                                 </div>
                                 <div>
                                     <p class="text-white text-[14px]">winmatch365 is the world's leading online
@@ -1750,12 +1790,12 @@
                                 <div class="pt-8 max-mob:pt-[14px]">
                                     <div class="flex gap-[15px] max-mob:justify-center">
                                         <img src="../public/assets/images/email_icon.svg" alt="email_icon"
-                                            loading="lazy" fetchpriority="high" as="image" type="image/svg">
+                                            loading="lazy" fetchpriority="high">
                                         <span class="text-blueLink text-[14px]">support@winmatch365.com</span>
                                     </div>
                                     <div class="flex gap-[15px] pt-6 max-mob:justify-center">
                                         <img src="../public/assets/images/live_chat.svg" alt="live_chat" loading="lazy"
-                                            fetchpriority="high" as="image" type="image/svg">
+                                            fetchpriority="high">
                                         <span class="text-blueLink text-[14px]">support@winmatch365.com</span>
                                     </div>
                                 </div>
@@ -1788,9 +1828,8 @@
 
                                 <div class="flex gap-[11px] pt-[11px]">
                                     <img src="../public/assets/images/fb.svg" alt="Facebook" loading="lazy"
-                                        fetchpriority="low" as="image" type="image/svg">
-                                    <img src="../public/assets/images/x.svg" alt="X" loading="lazy" fetchpriority="low"
-                                        as="image" type="image/svg">
+                                        fetchpriority="low">
+                                    <img src="../public/assets/images/x.svg" alt="X" loading="lazy" fetchpriority="low">
                                 </div>
                             </div>
                         </div>
@@ -1805,27 +1844,27 @@
                         <div class="scroller" data-direction="right" data-speed="fast">
                             <div class="scroller__inner py-4 flex flex-wrap gap-6">
                                 <img class="" src="../public/assets/images/providers/blueprint.svg" alt="blueprint"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/svg" <img class=""
-                                    src="../public/assets/images/providers/evolution.svg" alt="evolution" loading="lazy"
-                                    fetchpriority="high" as="image" type="image/svg" <img class=""
-                                    src="../public/assets/images/providers/ezuzi.svg" alt="ezuzi" loading="lazy"
-                                    fetchpriority="high" as="image" type="image/svg" <img class=""
-                                    src="../public/assets/images/providers/live_gaming.svg" alt="live_gaming"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/svg" /></li>
+                                    loading="lazy" fetchpriority="high">
+                                <img class="" src="../public/assets/images/providers/evolution.svg" alt="evolution"
+                                    loading="lazy" fetchpriority="high">
+                                <img class="" src="../public/assets/images/providers/ezuzi.svg" alt="ezuzi"
+                                    loading="lazy" fetchpriority="high">
+                                <img class="" src="../public/assets/images/providers/live_gaming.svg" alt="live_gaming"
+                                    loading="lazy" fetchpriority="high">
                                 <img class="" src="../public/assets/images/providers/newgame.svg" alt="newgame"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/svg" />
+                                    loading="lazy" fetchpriority="high">
                                 <img class="" src="../public/assets/images/providers/rage.svg" alt="rage" loading="lazy"
-                                    fetchpriority="high" as="image" type="image/svg" />
+                                    fetchpriority="high">
                                 <img class="" src="../public/assets/images/providers/redTiger.svg" alt="redTiger"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/svg" />
+                                    loading="lazy" fetchpriority="high">
                                 <img class="" src="../public/assets/images/providers/streak.svg" alt="streak"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/svg" />
+                                    loading="lazy" fetchpriority="high">
 
                                 <img class="" src="../public/assets/images/providers/tvbet.svg" alt="tvbet"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/svg" />
+                                    loading="lazy" fetchpriority="high">
 
                                 <img class="" src="../public/assets/images/providers/blueprint.svg" alt="blueprint"
-                                    loading="lazy" fetchpriority="high" as="image" type="image/svg" />
+                                    loading="lazy" fetchpriority="high">
                             </div>
                         </div>
                     </div>
@@ -1839,45 +1878,50 @@
                         <div class="w-full">
                             <div>
                                 <ul class="flex gap-4 list-none p-8 space-x-4 flex-wrap gap-y-6 justify-center">
-                                    <li><a href=""><img class="h-[30px]"
-                                                src="../public/assets/images/paymentyMethod/bank_depo.svg"
-                                                alt="bank_deposite" loading="lazy" fetchpriority="high" as="image"
-                                                type="image/svg" /></a>
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/bank_depo.svg"
+                                            alt="bank_deposite" loading="lazy" fetchpriority="high">
                                     </li>
-                                    <li><a href=""><img class="h-[30px]"
-                                                src="../public/assets/images/paymentyMethod/gpay.svg" alt="gpay"
-                                                loading="lazy" fetchpriority="high" as="image" type="image/svg" /></a>
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/gpay.svg"
+                                            alt="gpay" loading="lazy" fetchpriority="high">
                                     </li>
-                                    <li><img class="h-[30px]" src="../public/assets/images/paymentyMethod/hdfc.svg"
-                                            alt="hdfc" loading="lazy" fetchpriority="high" as="image"
-                                            type="image/svg" />
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/hdfc.svg"
+                                            alt="hdfc" loading="lazy" fetchpriority="high">
                                     </li>
-                                    <li><img class="h-[30px]" src="../public/assets/images/paymentyMethod/icici.svg"
-                                            alt="icici" loading="lazy" fetchpriority="high" as="image"
-                                            type="image/svg" /></li>
-                                    <li><img class="h-[30px]" src="../public/assets/images/paymentyMethod/kotak.svg"
-                                            alt="kotak" loading="lazy" fetchpriority="high" as="image"
-                                            type="image/svg" /></li>
-                                    <li><img class="h-[30px]"
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/icici.svg"
+                                            alt="icici" loading="lazy" fetchpriority="high">
+                                    </li>
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/kotak.svg"
+                                            alt="kotak" loading="lazy" fetchpriority="high">
+                                    </li>
+                                    <li>
+                                        <img class="h-[30px]"
                                             src="../public/assets/images/paymentyMethod/master_card.svg"
-                                            alt="master_card" loading="lazy" fetchpriority="high" as="image"
-                                            type="image/svg" />
+                                            alt="master_card" loading="lazy" fetchpriority="high">
                                     </li>
-                                    <li><img class="h-[30px]" src="../public/assets/images/paymentyMethod/phone_pay.svg"
-                                            alt="phone_pay" loading="lazy" fetchpriority="high" as="image"
-                                            type="image/svg" /></li>
-                                    <li><img class="h-[30px]" src="../public/assets/images/paymentyMethod/sbi.svg"
-                                            alt="sbi" loading="lazy" fetchpriority="high" as="image" type="image/svg" />
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/phone_pay.svg"
+                                            alt="phone_pay" loading="lazy" fetchpriority="high">
                                     </li>
-                                    <li><img class="h-[30px]" src="../public/assets/images/paymentyMethod/upi.svg"
-                                            alt="upi" loading="lazy" fetchpriority="high" as="image" type="image/svg" />
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/sbi.svg"
+                                            alt="sbi" loading="lazy" fetchpriority="high">
                                     </li>
-                                    <li><img class="h-[30px]" src="../public/assets/images/paymentyMethod/visa.svg"
-                                            alt="visa" loading="lazy" fetchpriority="high" as="image"
-                                            type="image/svg" /></li>
-                                    <li><img class="h-[30px]" src="../public/assets/images/paymentyMethod/amazonpay.svg"
-                                            alt="amazonpay" loading="lazy" fetchpriority="high" as="image"
-                                            type="image/svg" />
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/upi.svg"
+                                            alt="upi" loading="lazy" fetchpriority="high">
+                                    </li>
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/visa.svg"
+                                            alt="visa" loading="lazy" fetchpriority="high">
+                                    </li>
+                                    <li>
+                                        <img class="h-[30px]" src="../public/assets/images/paymentyMethod/amazonpay.svg"
+                                            alt="amazonpay" loading="lazy" fetchpriority="high">
                                     </li>
                                 </ul>
                             </div>
